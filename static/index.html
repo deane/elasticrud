@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <link href="static/css/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="static/js/jsoneditor.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="static/js/main.js"></script>
+</head>
+<body>
+    <div>
+        <span>index:</span> <select id="index"></select>
+        <span>type:</span> <select id="type"></select>
+        <span>id:</span> <input id="id">
+        <button type="button" id="get">Fetch</button>
+    </div>
+    <div id="jsoneditor" style="width: 600px; height: 800px;"></div>
+
+    <button type="button" id="save">Save</button>
+
+    <script>
+        // create the editor
+        var container = document.getElementById("jsoneditor");
+        var options = {};
+        var editor = new JSONEditor(container, options);
+        var mappings = {{.}}
+
+    </script>
+</body>
+</html>
