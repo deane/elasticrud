@@ -4,20 +4,36 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
     <link href="static/css/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
     <script src="static/js/jsoneditor.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="static/js/main.js"></script>   
+
+    
+
 </head>
 <body>
-    <div>
-        <span>index:</span> <select id="index"></select>
-        <span>type:</span> <select id="type"></select>
-        <span>id:</span> <input id="id">
-        <button type="button" id="get">Fetch</button>
+    
+    <div class="inputs">
+        <div class="title"><p>ELASTICRUD</p></div>       
+        <div class="text">index:</div> <select class="right" id="index"></select>
+        <div class="text">type:</div> <select id="type"></select>
+        <div class="text">id:</div> <input id="id">
+        
     </div>
-    <div id="jsoneditor" style="width: 600px; height: 800px;"></div>
+    <div id="jsoneditor"></div>
 
-    <button type="button" id="save">Save</button>
+    <!--style="width: 400px; height: 600px; float: left !important;"-->
+    
+
+    <div class="buttons">
+            <button type="button" id="get">Fetch</button>
+            <button type="button" id="save">Save</button>
+    </div>
+
+    <div class="footer">
+        <p>Version 1.11.1</p>
+    </div>
 
     <script>
         // create the editor

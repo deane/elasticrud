@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: monospace;
+    font-size: 10px;
+}
+
+/* -- TOP BAR --*/
+
+.title {
+    height: 35px;
+    margin-bottom: 30px;
+    background-color: rgb(61, 134, 246);
+    border-bottom: 1px solid rgb(61, 134, 246);
+}
+
+.title  p {
+    font-size: 1.8rem;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 35px;
+}
+
+/* -- INPUTS --*/
+
+.inputs {
+    position: relative;
+    width: 250px;
+    height: 599px;
+    border-left: 1px solid rgb(61, 134, 246);
+    border-bottom: 1px solid rgb(61, 134, 246);
+    float: left !important;
+}
+
+.inputs .text {
+    font-size: 1.3rem;
+    display: inline-block;
+    left: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 15%;
+}
+
+.inputs #index,
+.inputs #type,
+.inputs #id {
+    right: 0;
+    width: 60%;
+    margin-top: 20px;
+}
+
+/* -- BUTTONS --*/
+
+.buttons {
+    clear: both;
+    position: relative;
+    height: 40px;
+    width: 649px;
+    display: block;
+    border-left: 1px solid rgb(50, 120, 200);
+    border-right: 1px solid rgb(50, 120, 200);
+}
+
+#get, #save {
+    color: #FFF;
+    font-size: 1.5rem;
+    height: 100%;
+    border: none;
+    background-color: rgb(61, 134, 246);
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+#get {
+    float: left;
+    width: 250px;        
+}
+
+#save {
+    width: 399px;
+}
+
+#get:hover, #save:hover {
+     background-color: rgb(20, 120, 200);
+     border-right: 1px solid rgb(20, 120, 200);
+ }
+
+ /* -- FOOTER --*/
+
+.footer {
+    line-height: 16px;
+    font-size: 1rem;
+    text-align: center;
+    height: 20px;
+    width: 650px;
+    background-color: rgb(20, 100, 200);
+    color: #ccc;
+    border-right: 1px solid rgb(61, 134, 246);
+}
+
+/* JSONEDITOR */
+
+#jsoneditor {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
